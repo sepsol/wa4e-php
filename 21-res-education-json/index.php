@@ -102,7 +102,7 @@ try {
 
     <br>
     <p>
-      <a href="https://www.wa4e.com/assn/res-position/" target="_blank">
+      <a href="https://www.wa4e.com/assn/res-education/" target="_blank">
         Specification for this Application
       </a>
     </p>
