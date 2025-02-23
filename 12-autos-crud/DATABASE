@@ -1,0 +1,20 @@
+-- Databases and Tables Required for the Assignment
+
+DROP DATABASE IF EXISTS autos;
+CREATE DATABASE autos CHARACTER SET=utf8mb4;
+USE autos;
+
+CREATE USER 'autosuser'@'localhost' IDENTIFIED BY 'autospass';
+GRANT ALL ON autos.* TO 'autosuser'@'localhost';
+
+CREATE USER 'autosuser'@'127.0.0.1' IDENTIFIED BY 'autospass';
+GRANT ALL ON autos.* TO 'autosuser'@'127.0.0.1';
+
+CREATE TABLE autos (
+    auto_id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+    make VARCHAR(255),
+    model VARCHAR(255),
+    year INTEGER,
+    mileage INTEGER,
+    PRIMARY KEY (auto_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

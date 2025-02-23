@@ -1,0 +1,1 @@
+<?php include("4-digit-pin.php"); ?>

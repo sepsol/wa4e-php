@@ -1,0 +1,25 @@
+<h1>Counter</h1>
+
+<ul id="list">
+  <li>First Item</li>
+</ul>
+
+<p>
+  <a href="#" onclick="add(); return false;">Increment</a>
+</p>
+
+<script>
+  count = 1;
+  const ul = document.getElementById('list');
+  console.log(ul);
+  console.dir(ul);
+  function add() {
+    // Declaring variable with 'var' (or 'let' or 'const') inside functions
+    // so that it doesn't append to the global scope
+    var li = document.createElement('li');
+    li.className = 'list-item';
+    li.innerHTML = `The counter is ${count}`;
+    ul.appendChild(li);
+    count++;
+  }
+</script>
