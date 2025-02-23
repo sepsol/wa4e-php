@@ -2,8 +2,8 @@
 $('document').ready(function() {
   const prevCount = $('positions-container').children.length;
 
-  let posId = prevCount + 1;
-  const MAX_POSITIONS = 9 - prevCount;
+  let posId = 1 + prevCount;
+  const MAX_POSITIONS = 9;
 
   $('#add-position-button').click(function () {
     if (posId > MAX_POSITIONS) return;
