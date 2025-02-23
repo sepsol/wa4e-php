@@ -69,7 +69,7 @@ function delete_profile_positions(int $profile_id) {
   global $pdo;
   $stmt = $pdo->prepare('DELETE FROM positions WHERE profile_id = :pid');
   $stmt->execute([
-    ':pid' => $_POST['profile_id'],
+    ':pid' => $profile_id,
   ]);
 }
 
