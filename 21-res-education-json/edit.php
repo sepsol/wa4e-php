@@ -119,7 +119,8 @@ if (isset($_POST['edit'])) {
                 <input type="text" name="edu_year_<?= $index + 1 ?>" id="edu-year-<?= $index + 1 ?>-input"
                   class="form-control" value="<?= htmlentities($education['year']) ?>">
               </div>
-              <button type="button" class="btn btn-link" onclick="$('#education-${eduId}').remove(); return false;">
+              <button type="button" class="btn btn-link"
+                onclick="$('#education-<?= $index + 1 ?>').remove(); return false;">
                 <span class="text-danger">
                   <span class="glyphicon glyphicon-remove" style="position: static; bottom: 0; font-size: 0.8em;"
                     aria-hidden="true"></span>
