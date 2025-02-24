@@ -154,9 +154,9 @@ if (isset($_POST['edit'])) {
           <div id="position-<?= $index + 1 ?>">
             <br>
             <div class="form-group">
-              <label for="year-<?= $index + 1 ?>-input" class="col-sm-2 control-label">Year:</label>
+              <label for="pos-year-<?= $index + 1 ?>-input" class="col-sm-2 control-label">Year:</label>
               <div class="col-sm-2">
-                <input type="text" name="year<?= $index + 1 ?>" id="year-<?= $index + 1 ?>-input" class="form-control"
+                <input type="text" name="pos_year_<?= $index + 1 ?>" id="pos-year-<?= $index + 1 ?>-input" class="form-control"
                   value="<?= htmlentities($position['year']) ?>">
               </div>
               <button type="button" class="btn btn-link"
@@ -169,9 +169,9 @@ if (isset($_POST['edit'])) {
               </button>
             </div>
             <div class="form-group" id="position-<?= $index + 1 ?>">
-              <label for="desc-<?= $index + 1 ?>-input" class="col-sm-2 control-label">Description:</label>
+              <label for="pos-desc-<?= $index + 1 ?>-input" class="col-sm-2 control-label">Description:</label>
               <div class="col-sm-6">
-                <textarea name="desc<?= $index + 1 ?>" id="desc-<?= $index + 1 ?>-input" class="form-control"
+                <textarea name="pos_desc_<?= $index + 1 ?>" id="pos-desc-<?= $index + 1 ?>-input" class="form-control"
                   style="resize: vertical" rows="8" cols="80"><?= htmlentities($position['description']) ?></textarea>
               </div>
             </div>
